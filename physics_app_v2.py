@@ -4,7 +4,7 @@ from openai import OpenAI
 # Configure OpenRouter API
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key=st.secrets["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"]
 )
 
 # Page config
@@ -145,4 +145,5 @@ if solve_button:
 
 # Footer
 st.markdown("---")
+
 st.markdown("**Made by you** | Powered by Llama 3.3 70B 🚀")
